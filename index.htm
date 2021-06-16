@@ -1,0 +1,942 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Sid's Awesome Maps!</title>
+<meta name="title" content="Sid's Awesome Maps!">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta property="og:url" content="https://sidsawesomwmaps.webs.com/">
+<meta property="og:title" content="Sid's Awesome Maps!">
+<meta property="og:description" content="">
+<meta property="og:site_name" content="Sid's Awesome Maps!">
+<link rel="stylesheet" type="text/css" href="css.css?family=Amaranth:regular,italic,700,700italic|Arbutus+Slab:regular"><link rel="stylesheet" type="text/css" href="css-1.css?family=Cabin:regular,italic,500,500italic,600,600italic,700,700italic|Arbutus+Slab:regular"><style type="text/css">
+.w-font-amaranth { font-family: 'Amaranth', sans-serif !important; }
+.w-font-arial { font-family: 'Arial', sans-serif !important; }
+.w-font-arbutus_slab { font-family: 'Arbutus Slab', sans-serif !important; }
+.w-font-cabin { font-family: 'Cabin', sans-serif !important; }
+.w-font-arbutus_slab { font-family: 'Arbutus Slab', sans-serif !important; }
+</style>
+<script>
+webs = window.webs || {};
+webs.locale = "en-US";
+webs.props = {
+	globalAssetBaseURL: "https://static.websimages.com/v96d2ae2",
+	staticServer: "https://static.websimages.com",
+	membersServer: "https://members.webs.com",
+	dynamicAssetServer: "https://dynamic.websimages.com",
+	modulesVersion: "v96d2ae2",
+	environment: "production",
+	imageProcessorServer: "https://mediaprocessor.websimages.com",
+	thumbServer: "https://thumbs.webs.com"
+};
+webs.theme = {"slug":"gridspark","name":"Gridspark","premium":false,"mobile":false,"translate":false,"customizable":true,"moduleStyles":{"email_list":{"gridspark_default":{"global":{"css":"css\/email_list.less"},"inherit":"default","default":true}},"carousel":{"gridspark_default":{"global":{"css":"css\/carousel.less"},"inherit":"default","default":true}},"button":{"gridspark_default":{"global":{"css":"css\/button.less"},"inherit":"default","default":true}},"contact_form":{"gridspark_default":{"global":{"css":"css\/contact_form.less"},"inherit":"default","default":true}}}};
+webs.theme.style = {"name":"Red","slug":"default","swatchColor":"#b62d2d","thumb":"thumbs\/default.jpg","css":"css\/base.less"};
+webs.theme.url = 'https://dynamic.websimages.com/s/themes/gridspark/v1.39';
+webs.theme.variables = {"footer_title":{"lineHeight":20,"linkColor":"#b62d2d","area":"Footer","color":"#6f0f0f","font":"amaranth","hidden":false,"align":null,"name":"Titles","slug":"footer_title","type":"text","hoverColor":"#b62d2d","size":18},"bg_main":{"area":"Content","pattern":null,"color":"#f7f7f7","texture":null,"hidden":false,"align":null,"name":"Content Background","slug":"bg_main","type":"background"},"text":{"lineHeight":20,"linkColor":"#b62d2d","area":"Body","color":"#747474","font":"arial","hidden":false,"align":null,"name":"Text","slug":"text","type":"text","hoverColor":"#2d9cb6","size":12},"title":{"lineHeight":20,"linkColor":"#b62d2d","area":"Body","color":"#b62d2d","font":"arbutus_slab","hidden":false,"align":null,"name":"Titles","slug":"title","type":"text","hoverColor":"#2d9cb6","size":20},"footer_text":{"lineHeight":20,"linkColor":"#a8a8a8","area":"Footer","color":"#F7F7F7","font":"arial","hidden":false,"align":null,"name":"Text","slug":"footer_text","type":"text","hoverColor":"#a8a8a8","size":12},"header_subtitle":{"area":"Global","color":"#747474","font":"arial","hidden":true,"align":null,"name":null,"slug":"header_subtitle","type":"font"},"theme":{"area":"Global","color":"#4c808b","hidden":false,"align":null,"name":"Accent","slug":"theme","type":"color"},"header_title":{"area":"Global","color":"#b62d2d","font":"amaranth","hidden":true,"align":null,"name":null,"slug":"header_title","type":"font"},"nav":{"lineHeight":18,"linkColor":"#a9a9a9","area":"Navigation","color":null,"font":"amaranth","hidden":false,"align":null,"name":"Text","slug":"nav","type":"text","hoverColor":"#2daab6","size":17},"bg_footer":{"area":"Footer","pattern":null,"color":"#363636","texture":null,"hidden":false,"align":null,"name":"Footer Background","image":{"position":null,"fileId":null,"path":"@{theme_root}\/images\/bg_footer.png","attachment":null,"repeat":null,"size":null},"slug":"bg_footer","type":"background"},"bg_body":{"area":"Body","pattern":null,"color":"#c3c3c3","texture":null,"hidden":false,"align":null,"name":"Body Background","image":{"position":null,"fileId":null,"path":"http:\/\/sidsawesomwmaps.webs.com\/starnetblog_cloudy_starfield_texture7.jpg","attachment":null,"repeat":null,"size":null},"slug":"bg_body","type":"background"}};
+webs.site = {
+	url: "https://sidsawesomwmaps.webs.com/",
+	id: 130775419,
+	premium: false
+};
+webs.locale = 'en-US';
+webs.renderedModulesPromises = [];
+</script>
+<script src="active-static/lib/modernizr-old.js"></script>
+<script src="static/global/js/require.js"></script>
+<script src="ajax/libs/jquery/1.8/jquery.min.js"></script>
+<script src="active-static/target/apps/bootstrap.js"></script>
+<script>define('moduleVersions', function(){return {"mobile_link":"1.10","mobile_email":"1.7","zumba_membership":"1.17","photo_gallery_slideshow":"1.23","zumba-membership":"1.1","zumba-licenses":"1.1","zumba_footer":"1.22","slideshow":"1.32","button":"1.16","text_image":"1.13","horizontal_rule":"1.15","video":"1.38","follow":"1.14","spacer":"1.8","text":"1.19","webstore_products":"1.19","mobile_text":"1.9","menu":"1.5","image":"1.28","team":"1.5","table":"1.21","mobile_location":"1.10","photo_gallery":"1.74","stacked_item":"1.9","fb-comments":"1.10","mobile_social":"1.10","zumba_qualifications":"1.11","zumba_shop":"1.10","zumba-contact":"1.1","contact_form":"1.39","google_map":"1.28","seo_footer":"1.15","timeline":"1.6","sb2_paragraph":"1.15","zumba_contact":"1.15","contact":"1.6","social-links":"1.23","share_button":"1.11","fb-like":"1.24","zumba-qualifications":"1.1","title":"1.18","mobile_phone":"1.6","quote":"1.3","carousel":"1.39","donate":"1.11","twitter-feed":"1.19","ads":"1.6","email_list":"1.19","icon":"1.3","buckets":"1.20","audio":"1.16","header_editor":"1.55","paypal":"1.11","google_checkout":"1.8","footer":"1.10","zumba-footer":"1.1","zumba_calendar":"1.21","html":"1.17","zumba_licenses":"1.11","widget_bank":"1.8","mobile_hours":"1.10"};});</script>
+
+
+<link id="webs-theme-css" rel="stylesheet" type="text/css" href=".theme.css?pubDate=151218092606"><link rel="stylesheet" type="text/css" href="v96d2ae2/static/projects/finch/css/sitebase.css"><script src="recaptcha/api.js" async="" defer=""></script><script src="v96d2ae2/active-static/target/internal/sitebuilder/view/view.app.js"></script><link rel="stylesheet" type="text/css" href="css-2.css?family=Lato:300"><link rel="stylesheet" type="text/css" href="active-static/target/usersites/css/fixedFreebar.css">
+<meta name="fw:category" content="0">
+<noframes></noframes><noscript></noscript><!-- --><script type="text/javascript" src="static/global/js/webs/usersites/p.js"></script><script type="text/javascript">var _gaq=_gaq||[];_gaq.push(['_setDomainName','none']);_gaq.push(['_setAllowHash',false]);_gaq.push(['_setAllowLinker',true]);_gaq.push(['_setAccount','UA-230305-2']);_gaq.push(['_trackPageview']);</script>
+<script async="" src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+
+<body>
+
+
+	<div class="wrap">
+		<div class="wrap-inner">
+
+<header id="webs-header">
+	<div class="site-title">
+		<section class="webs-content-header webs-content" data-role="webs-header" data-webs-module="header_editor" data-webs-locked="true" id="554ecc720cf25ff245b1b300"><!-- Begin Tree --><div class="webs-parent webs-parent-0"><div class="webs-parent webs-parent-1 webs-col"><style type="text/css">#webs-bin-554ecc720cf25ff245b1b301 .w-header-area-custom {
+  width: 100%;
+}
+#webs-bin-554ecc720cf25ff245b1b301 .title {
+  top: 26px;
+  z-index: 20;
+  display: none;
+}
+#webs-bin-554ecc720cf25ff245b1b301 .subtitle {
+  top: 60px;
+  z-index: 21;
+  display: none;
+}
+#webs-bin-554ecc720cf25ff245b1b301 .w-header-layer-align-left.title,
+#webs-bin-554ecc720cf25ff245b1b301 .w-header-layer-align-center.title {
+  left: 346.5px;
+}
+#webs-bin-554ecc720cf25ff245b1b301 .w-header-layer-align-left.subtitle,
+#webs-bin-554ecc720cf25ff245b1b301 .w-header-layer-align-center.subtitle {
+  left: 8px;
+}
+#webs-bin-554ecc720cf25ff245b1b301 .w-header-layer-align-left.w-header-layer-centered,
+#webs-bin-554ecc720cf25ff245b1b301 .w-header-layer-align-center.w-header-layer-centered {
+  right: auto;
+  left: 50%;
+}
+#webs-bin-554ecc720cf25ff245b1b301 .w-header-layer-align-right.title {
+  right: 0px;
+}
+#webs-bin-554ecc720cf25ff245b1b301 .w-header-layer-align-right.subtitle {
+  right: 0px;
+}
+#webs-bin-554ecc720cf25ff245b1b301 .logo {
+  top: 16px;
+  width: 74px;
+  left: 16px;
+  height: 73px;
+  display: none;
+}
+#webs-bin-554ecc720cf25ff245b1b301 .background {
+  background-image: url('');
+  background-position: 0px 0px;
+}
+</style>
+	<div class="webs-bin" id="webs-bin-554ecc720cf25ff245b1b301">
+		<div class="webs-bin-wrap">
+			<div class="webs-container webs-module-header_editor  w-header_editor-default">
+<div class="w-header-area ">
+	
+
+	
+
+	
+		
+	
+
+	
+		<div id="" class="title w-header-layer w-header-layer-text w-header-layer-align-center ">
+			<div class="w-header-layer-container">
+				<h1 class="w-header-text-container">
+					<div class="w-header-text w-header-title ">
+						
+							<span style="color: rgb(5, 61, 99);">Sid's Awesome Maps!</span>
+						
+					</div>
+				</h1>
+			</div>
+		</div>
+	
+
+	
+		<div id="" class="subtitle w-header-layer w-header-layer-text w-header-layer-align-left ">
+			<div class="w-header-layer-container">
+				<h2 class="w-header-text-container">
+					<div class="w-header-text w-header-subtitle " data-placeholder="Subtitle">
+						
+							Click here to edit subtitle
+						
+					</div>
+				</h2>
+			</div>
+		</div>
+	
+
+</div><!-- END w-header-area -->
+
+			</div>
+		</div>
+	</div>
+
+		<script>
+			require(['jquery'], function($){
+				var deferredLoad = $.Deferred();
+				webs.renderedModulesPromises.push(deferredLoad.promise());
+				require(['internal/sitebuilder/common/ModuleClassLoader'], function(mcl){
+					mcl.create('header_editor', {data: {"width":"100%","linksData":{},"text_layers":[],"image_layers":[],"showBackground":false,"background":{"url":"","position":{"left":0,"top":0},"mobile":{"custom":false,"color":null}},"title":{"text":"<span style=\"color: rgb(5, 61, 99);\">Sid's Awesome Maps!<\/span>","top":26,"left":346.5,"right":"auto","align":"center","z-index":20,"display":"none","mobile":{"display":"block","top":18,"left":null,"color":null}},"subtitle":{"text":"Click here to edit subtitle","top":60,"left":8,"right":"auto","align":"left","z-index":21,"display":"none","mobile":{"display":"none","top":40,"left":null,"color":null}},"logo":{"top":16,"left":16,"display":"none","width":74,"height":73,"mobile":{"display":"none","top":10,"left":null,"color":null},"position":"absolute"},"_id":"554ecc720cf25ff245b1b301","_captchaPublicKey":"6Le3aDEUAAAAAMNRsdkVVxpJA05exOZVTuLEqM5u","_renderCaptcha":true,"_site":{"id":130775419}}, container: $('#webs-bin-554ecc720cf25ff245b1b301 > .webs-bin-wrap > .webs-container')}).done(function(m){
+						m.oneLoaded();
+						deferredLoad.resolve();
+					});
+				});
+			});
+		</script>
+</div></div></section>
+	</div>
+	<nav>
+		<span id='translatedMore' style='display:none; top: -9999px !important; left: -9999px !important;'>More</span>
+<ul id="webs-nav" class="webs-nav">
+	<li class="webs-home active fw-class-50d458c94c4fd5fe1ff32277e6a6de8a"><a href="index.htm" title="Survival With A Twist"><span class="title">Survival With A Twist</span><span class="after"></span></a></li>
+	<li class="fw-class-d961cbd5cd08fb7d0ee5894a6d5fd0c8"><a href="complete-world.html" title="Complete World"><span class="title">Complete World</span><span class="after"></span></a></li>
+	<li class="fw-class-d0dc72eb4f0b148c5067cdf3d4dc79fc"><a href="trapped-survival.html" title="Trapped Survival"><span class="title">Trapped Survival</span><span class="after"></span></a></li>
+</ul>
+
+	</nav>
+</header>
+
+<div class="webs-main webs-main-sidebar webs-main-sidebar-left clearfix">
+	<section class="webs-content webs-body" data-role="webs-body" id="554ecc720cf25ff245b1b30d"><!-- Begin Tree --><div class="webs-parent webs-parent-0"><div class="webs-parent webs-parent-1 webs-col">
+	<div class="webs-bin" id="webs-bin-554eccc83f7157262800381c">
+		<div class="webs-bin-wrap">
+			<div class="webs-container webs-module-title  w-title-default">
+<h3 class="webs-title webs-title-align-center ">
+	
+	<div class="w-text w-font-arbutus_slab"><span style="color: rgb(42, 143, 189);"><span style="color: rgb(42, 143, 189); font-size: 36px;" class="wz-bold">Sid's Awesome Maps!</span></span></div>
+</h3>
+
+			</div>
+		</div>
+	</div>
+
+		<script>
+			require(['jquery'], function($){
+				var deferredLoad = $.Deferred();
+				webs.renderedModulesPromises.push(deferredLoad.promise());
+				require(['internal/sitebuilder/common/ModuleClassLoader'], function(mcl){
+					mcl.create('title', {data: {"align":"center","html":"<span style=\"color: rgb(42, 143, 189);\"><span style=\"color: rgb(42, 143, 189); font-size: 36px;\" class=\"wz-bold\">Sid's Awesome Maps!<\/span><\/span>","level":null,"icon":{"enable":false,"set":null,"slug":null,"position":null,"style":null},"font":"arbutus_slab","linksData":{},"_id":"554eccc83f7157262800381c","_captchaPublicKey":"6Le3aDEUAAAAAMNRsdkVVxpJA05exOZVTuLEqM5u","_renderCaptcha":true,"_site":{"id":130775419}}, container: $('#webs-bin-554eccc83f7157262800381c > .webs-bin-wrap > .webs-container')}).done(function(m){
+						m.oneLoaded();
+						deferredLoad.resolve();
+					});
+				});
+			});
+		</script>
+
+	<div class="webs-bin" id="webs-bin-554ecd6e3f7157262800382a">
+		<div class="webs-bin-wrap">
+			<div class="webs-container webs-module-text ">
+<div class="webs-text w-font-cabin"><blockquote><p></p></blockquote><div style="text-align: center; color: rgb(13, 141, 148);"><span style="font-family: Cabin, sans-serif; font-size: 24px; line-height: 20px; color: rgb(13, 141, 148);" class=""><span id="selectionBoundary_1431228045290_4637579726986587" class="rangySelectionBoundary" style="line-height: 0; display: none;">﻿</span>Hello! Welcome!&nbsp;</span></div><div style="text-align: center; color: rgb(13, 141, 148);"><span style="font-size: 16px;">Here you will find awesome maps!</span></div><div style="text-align: center; color: rgb(13, 141, 148);"><span style="font-size: 16px;">You will be able to give suggestions for the maps and you will be able to give suggestions for future maps!<span id="selectionBoundary_1431228045290_297589048743248" class="rangySelectionBoundary" style="line-height: 0; display: none;">﻿</span></span></div><div style="text-align: center; color: rgb(13, 141, 148);"><span style="font-size: 16px;">This map is called Survival with a twist 2!</span></div><blockquote><p></p></blockquote></div>
+
+			</div>
+		</div>
+	</div>
+<style type="text/css">#webs-bin-554eceb53f7157262800384a .w-bucket {
+  width: 180px;
+}
+#webs-bin-554eceb53f7157262800384a .w-bucket > .webs-submodule {
+  max-width: 180px;
+}
+#webs-bin-554eceb53f7157262800384a .w-bucket > .webs-submodule .w-button-container {
+  max-width: 180px;
+}
+</style>
+	<div class="webs-bin" id="webs-bin-554eceb53f7157262800384a">
+		<div class="webs-bin-wrap">
+			<div class="webs-container webs-module-buckets  w-buckets-default">
+<div class="w-buckets-wrapper">
+	<div class="w-buckets cols3 clearfix webs-composite-module">
+		
+			
+				<div class="w-bucket">
+					
+						<div class="webs-submodule webs-submodule-image webs-module-image w-image-default" webs-submodule-slug="image"><div class="webs-frame webs-align-center webs-frame-default" style=""><div class="webs-frame-container"> 
+	
+		<div class="webs-image-wrapper-1 webs-hasframe webs-align-center" style="width:170px;height:102px;">
+			<div class="webs-image-crop ">
+				<img style="height:102px;" src="width/170/crop/0,42,170x102/sidsawesomwmaps.webs.com/Big 2.png">
+			</div>
+		</div>
+	
+ </div></div>
+</div>
+						
+						
+						
+					
+						
+						<div class="webs-submodule webs-submodule-title webs-module-title w-title-default" webs-submodule-slug="title"><h3 class="webs-title webs-title-align-center ">
+	
+	<div class="w-text "><span style="color: rgb(5, 61, 99);">Survival with a twist arena</span></div>
+</h3>
+</div>
+						
+						
+					
+						
+						
+						<div class="webs-submodule webs-submodule-text webs-module-text" webs-submodule-slug="text"><div class="webs-text "><p style="text-align: center; color: rgb(44, 161, 182);">A huge area that is your canvas to build on!</p></div>
+</div>
+						
+					
+						
+						
+						
+						<div class="webs-submodule webs-submodule-button webs-module-button w-button-gridspark_default w-button-default" webs-submodule-slug="button">
+<div class="w-button-container webs-align-center">
+	<div class="w-button-align webs-align-center">
+		
+		<a class="w-button " style="background-color: #2a8fbd" href="docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/s3mh98ioui6j84e6s0f84k241of2ko90/1623865800000/12700679002742675199/0B3uWRHSxc5WGMm1kVFpfMUxFTk0">
+			<div class="w-button-inner">
+				<div class="w-button-text-wrapper">
+					<div class="w-button-text">Click here to download the map!</div>
+				</div>
+				
+			</div>
+		</a>
+		
+	</div>
+</div></div>
+					
+				</div>
+			
+		
+			
+				<div class="w-bucket">
+					
+						<div class="webs-submodule webs-submodule-image webs-module-image w-image-default" webs-submodule-slug="image"><div class="webs-frame webs-align-center webs-frame-default" style=""><div class="webs-frame-container"> 
+	
+		<div class="webs-image-wrapper-1 webs-hasframe webs-align-center" style="width:170px;height:102px;">
+			<div class="webs-image-crop ">
+				<img style="height:102px;" src="width/170/crop/0,0,170x102/sidsawesomwmaps.webs.com/Super Picture.png">
+			</div>
+		</div>
+	
+ </div></div>
+</div>
+						
+						
+						
+					
+						
+						<div class="webs-submodule webs-submodule-title webs-module-title w-title-default" webs-submodule-slug="title"><h3 class="webs-title webs-title-align-center ">
+	
+	<div class="w-text "><span style="color: rgb(5, 61, 99);"><span style="color: rgb(5, 61, 99);">Areal shot of the arena</span></span></div>
+</h3>
+</div>
+						
+						
+					
+						
+						
+						<div class="webs-submodule webs-submodule-text webs-module-text" webs-submodule-slug="text"><div class="webs-text "><span style="color: rgb(44, 161, 182);"><p style="text-align: center; color: rgb(44, 161, 182);">You are trapped but&nbsp;have a big area to live in!</p></span></div>
+</div>
+						
+					
+						
+						
+						
+						<div class="webs-submodule webs-submodule-button webs-module-button w-button-gridspark_default w-button-default" webs-submodule-slug="button">
+<div class="w-button-container webs-align-center">
+	<div class="w-button-align webs-align-center">
+		
+		<a class="w-button " style="background-color: #2a8fbd" href="docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/s3mh98ioui6j84e6s0f84k241of2ko90/1623865800000/12700679002742675199/0B3uWRHSxc5WGMm1kVFpfMUxFTk0">
+			<div class="w-button-inner">
+				<div class="w-button-text-wrapper">
+					<div class="w-button-text">Click here to download the map!</div>
+				</div>
+				
+			</div>
+		</a>
+		
+	</div>
+</div></div>
+					
+				</div>
+			
+		
+			
+				<div class="w-bucket">
+					
+						<div class="webs-submodule webs-submodule-image webs-module-image w-image-default" webs-submodule-slug="image"><div class="webs-frame webs-align-center webs-frame-default" style=""><div class="webs-frame-container"> 
+	
+		<div class="webs-image-wrapper-1 webs-hasframe webs-align-center" style="width:170px;height:102px;">
+			<div class="webs-image-crop ">
+				<img style="height:102px;" src="width/170/crop/0,11,170x102/sidsawesomwmaps.webs.com/Triiiiiips-.png">
+			</div>
+		</div>
+	
+ </div></div>
+</div>
+						
+						
+						
+					
+						
+						<div class="webs-submodule webs-submodule-title webs-module-title w-title-default" webs-submodule-slug="title"><h3 class="webs-title webs-title-align-left ">
+	
+	<div class="w-text "><div style="text-align: center; color: rgb(5, 61, 99);">Mine stone and trade it for stuff</div></div>
+</h3>
+</div>
+						
+						
+					
+						
+						
+						<div class="webs-submodule webs-submodule-text webs-module-text" webs-submodule-slug="text"><div class="webs-text "><div style="text-align: center;"><span style="color: rgb(44, 161, 182);">There are many things you can trade stone for!</span></div></div>
+</div>
+						
+					
+						
+						
+						
+						<div class="webs-submodule webs-submodule-button webs-module-button w-button-gridspark_default w-button-default" webs-submodule-slug="button">
+<div class="w-button-container webs-align-center">
+	<div class="w-button-align webs-align-center">
+		
+		<a class="w-button " style="background-color: #2a8fbd" href="docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/s3mh98ioui6j84e6s0f84k241of2ko90/1623865800000/12700679002742675199/0B3uWRHSxc5WGMm1kVFpfMUxFTk0">
+			<div class="w-button-inner">
+				<div class="w-button-text-wrapper">
+					<div class="w-button-text">Click here to download the map!</div>
+				</div>
+				
+			</div>
+		</a>
+		
+	</div>
+</div></div>
+					
+				</div>
+			
+		
+			
+		
+			
+		
+	</div>
+</div>
+			</div>
+		</div>
+	</div>
+
+		<script>
+			require(['jquery'], function($){
+				var deferredLoad = $.Deferred();
+				webs.renderedModulesPromises.push(deferredLoad.promise());
+				require(['internal/sitebuilder/common/ModuleClassLoader'], function(mcl){
+					mcl.create('buckets', {data: {"bucketContents":["image","title","text","button"],"numCols":3,"cols":[{"image":{"url":"http://sidsawesomwmaps.webs.com/Big%202.png","imageType":"webs","width":170,"height":102,"imageWidth":100,"border":"none","top":-42,"inBucket":true,"frame":"default","left":0,"imageHeight":210,"align":"center","webs":{"fileId":405383307,"path":"Big 2.png"}},"title":{"align":"center","html":"<span style=\"color: rgb(5, 61, 99);\">Survival with a twist arena<\/span>","level":null,"icon":{"enable":false,"set":null,"slug":null,"position":null,"style":null},"linksData":{}},"text":{"html":"<p style=\"text-align: center; color: rgb(44, 161, 182);\">A huge area that is your canvas to build on!<\/p>"},"button":{"html":"Click here to download the map!","link":null,"bgcolor":"#2a8fbd","align":"center","linkInfo":{"tab":"webpage","url":"http://bit.ly/1Iqgx8r","newWindow":false},"icon":{"enable":false,"set":null,"slug":null,"position":"left","style":null},"iconLeft":true,"iconStyle":"light","background":""},"show":true,"_i_":0,"_ip1_":1,"_every_":"org.mozilla.javascript.gen.c10@267fb998"},{"image":{"url":"http://sidsawesomwmaps.webs.com/Super Picture.png","imageType":"webs","width":170,"height":102,"imageWidth":100,"border":"none","top":0,"inBucket":true,"frame":"default","left":0,"imageHeight":210,"align":"center","webs":{"fileId":405383478,"path":"Super Picture.png"}},"title":{"align":"center","html":"<span style=\"color: rgb(5, 61, 99);\"><span style=\"color: rgb(5, 61, 99);\">Areal shot of the arena<\/span><\/span>","level":null,"icon":{"enable":false,"set":null,"slug":null,"position":null,"style":null},"linksData":{}},"text":{"html":"<span style=\"color: rgb(44, 161, 182);\"><p style=\"text-align: center; color: rgb(44, 161, 182);\">You are trapped but&nbsp;have a big area to live in!<\/p><\/span>"},"button":{"html":"Click here to download the map!","link":null,"bgcolor":"#2a8fbd","align":"center","linkInfo":{"tab":"webpage","url":"http://bit.ly/1Iqgx8r","newWindow":false},"icon":{"enable":false,"set":null,"slug":null,"position":"left","style":null},"iconLeft":true,"iconStyle":"light","background":""},"show":true,"_i_":1,"_ip1_":2,"_every_":"org.mozilla.javascript.gen.c10@b71bde7"},{"image":{"url":"http://sidsawesomwmaps.webs.com/Triiiiiips-.png","imageType":"webs","width":170,"height":102,"imageWidth":100,"border":"none","top":-11,"inBucket":true,"frame":"default","left":0,"imageHeight":210,"align":"center","webs":{"fileId":405383486,"path":"Triiiiiips-.png"}},"title":{"align":"left","html":"<div style=\"text-align: center; color: rgb(5, 61, 99);\">Mine stone and trade it for stuff<\/div>","level":null,"icon":{"enable":false,"set":null,"slug":null,"position":null,"style":null},"linksData":{}},"text":{"html":"<div style=\"text-align: center;\"><span style=\"color: rgb(44, 161, 182);\">There are many things you can trade stone for!<\/span><\/div>"},"button":{"html":"Click here to download the map!","link":null,"bgcolor":"#2a8fbd","align":"center","linkInfo":{"tab":"webpage","url":"http://bit.ly/1Iqgx8r","newWindow":false},"icon":{"enable":false,"set":null,"slug":null,"position":"left","style":null},"iconLeft":true,"iconStyle":"light","background":""},"show":true,"_i_":2,"_ip1_":3,"_every_":"org.mozilla.javascript.gen.c10@586a8e8f"},{"image":{"url":null,"imageType":null,"width":300,"height":168,"imageWidth":100,"border":"none","top":0,"inBucket":true,"frame":"default","align":"center"},"title":{"align":"left","level":3,"icon":{"enable":false,"set":null,"slug":null,"position":null,"style":null}},"text":{},"button":{"html":null,"link":null,"linkInfo":{"linkType":"website","linkUrl":null,"newWindow":false},"icon":{"enable":false,"set":null,"slug":null,"position":"left","style":null},"iconLeft":true,"iconStyle":"light","bgcolor":null,"background":""},"show":false,"_i_":3,"_ip1_":4,"_every_":"org.mozilla.javascript.gen.c10@3bb57ba2"},{"image":{"url":null,"imageType":null,"width":300,"height":168,"imageWidth":100,"border":"none","top":0,"inBucket":true,"frame":"default","align":"center"},"title":{"align":"left","level":3,"icon":{"enable":false,"set":null,"slug":null,"position":null,"style":null}},"text":{},"button":{"html":null,"link":null,"linkInfo":{"linkType":"website","linkUrl":null,"newWindow":false},"icon":{"enable":false,"set":null,"slug":null,"position":"left","style":null},"iconLeft":true,"iconStyle":"light","bgcolor":null,"background":""},"show":false,"_i_":4,"_ip1_":5,"_every_":"org.mozilla.javascript.gen.c10@7c7e74e"}],"_id":"554eceb53f7157262800384a","_captchaPublicKey":"6Le3aDEUAAAAAMNRsdkVVxpJA05exOZVTuLEqM5u","_renderCaptcha":true,"_site":{"id":130775419}}, container: $('#webs-bin-554eceb53f7157262800384a > .webs-bin-wrap > .webs-container')}).done(function(m){
+						m.oneLoaded();
+						deferredLoad.resolve();
+					});
+				});
+			});
+		</script>
+
+	<div class="webs-bin" id="webs-bin-554efaaa3f71572628003c2a">
+		<div class="webs-bin-wrap">
+			<div class="webs-container webs-module-slideshow  w-slideshow-white w-slideshow-base">
+<div class="w-slideshow w-slideshow-bottom webs-align-center " style="width: 446px; height: 301px; ">
+	<div class="w-slideshow-thumbnail-area">
+		<div class="w-slideshow-thumbnails">
+			<ul class="w-slideshow-thumbnails-ul">
+				
+					<li class="w-slideshow-thumbnails-li selected">
+						<figure class="w-slideshow-figure">
+							<div class="w-slideshow-image_container clearfix">
+								<img data-src-large="https://mediaprocessor.websimages.com/width/446/sidsawesomwmaps.webs.com/SWT%20start.png" src="square/250/sidsawesomwmaps.webs.com/SWT start.png" alt="" class="w-slideshow-image">
+								
+							</div>
+						</figure>
+					</li>
+				
+					<li class="w-slideshow-thumbnails-li ">
+						<figure class="w-slideshow-figure">
+							<div class="w-slideshow-image_container clearfix">
+								<img data-src-large="https://mediaprocessor.websimages.com/width/446/sidsawesomwmaps.webs.com/Triiiiiips-.png" src="square/250/sidsawesomwmaps.webs.com/Triiiiiips-.png" alt="" class="w-slideshow-image">
+								
+							</div>
+						</figure>
+					</li>
+				
+					<li class="w-slideshow-thumbnails-li ">
+						<figure class="w-slideshow-figure">
+							<div class="w-slideshow-image_container clearfix">
+								<img data-src-large="https://mediaprocessor.websimages.com/width/446/sidsawesomwmaps.webs.com/Super%20Picture.png" src="square/250/sidsawesomwmaps.webs.com/Super Picture.png" alt="" class="w-slideshow-image">
+								
+							</div>
+						</figure>
+					</li>
+				
+					<li class="w-slideshow-thumbnails-li ">
+						<figure class="w-slideshow-figure">
+							<div class="w-slideshow-image_container clearfix">
+								<img data-src-large="https://mediaprocessor.websimages.com/width/446/sidsawesomwmaps.webs.com/Tradddedss.png" src="square/250/sidsawesomwmaps.webs.com/Tradddedss.png" alt="" class="w-slideshow-image">
+								
+							</div>
+						</figure>
+					</li>
+				
+					<li class="w-slideshow-thumbnails-li ">
+						<figure class="w-slideshow-figure">
+							<div class="w-slideshow-image_container clearfix">
+								<img data-src-large="https://mediaprocessor.websimages.com/width/446/sidsawesomwmaps.webs.com/Survival%20witnh%20a%20twist%201.8%20stuff.png" src="square/250/sidsawesomwmaps.webs.com/Survival witnh a twist 1.8 stuff.png" alt="" class="w-slideshow-image">
+								
+							</div>
+						</figure>
+					</li>
+				
+					<li class="w-slideshow-thumbnails-li ">
+						<figure class="w-slideshow-figure">
+							<div class="w-slideshow-image_container clearfix">
+								<img data-src-large="https://mediaprocessor.websimages.com/width/446/sidsawesomwmaps.webs.com/Big%202.png" src="square/250/sidsawesomwmaps.webs.com/Big 2.png" alt="" class="w-slideshow-image">
+								
+							</div>
+						</figure>
+					</li>
+				
+				
+			</ul>
+			<nav class="w-slideshow-thumbnails-nav">
+				<a href="#previous_page" title="Previous Page" class="w-slideshow-page-prev"><span>Previous Page</span></a>
+				<a href="#next_page" title="Next Page" class="w-slideshow-page-next"><span>Next Page</span></a>
+			</nav>
+		</div>
+	</div>
+
+	<div class="w-slideshow-resize">
+		<div class="w-slideshow-current">
+			<figure class="w-slideshow-figure">
+				
+					<div class="w-slideshow-image_container clearfix">
+						<img src="width/446/sidsawesomwmaps.webs.com/SWT start.png" alt="" class="w-slideshow-image">
+						
+					</div>
+				
+			</figure>
+		</div>
+		<nav class="w-slideshow-nav">
+			<a href="#previous" title="Previous Slide" class="w-slideshow-prev"><span>Previous</span></a>
+			<a href="#play" title="Play" class="w-slideshow-play"><span>Play Slideshow</span></a>
+			<a href="#next" title="Next Slide" class="w-slideshow-next"><span>Next</span></a>
+		</nav>
+	</div>
+</div>
+
+			</div>
+		</div>
+	</div>
+
+		<script>
+			require(['jquery'], function($){
+				var deferredLoad = $.Deferred();
+				webs.renderedModulesPromises.push(deferredLoad.promise());
+				require(['internal/sitebuilder/common/ModuleClassLoader'], function(mcl){
+					mcl.create('slideshow', {data: {"_style":"white","images":[{"url":"http://sidsawesomwmaps.webs.com/SWT%20start.png","caption":"","_i_":0,"_ip1_":1,"_every_":"org.mozilla.javascript.gen.c10@561c9a85"},{"url":"http://sidsawesomwmaps.webs.com/Triiiiiips-.png","caption":"","_i_":1,"_ip1_":2,"_every_":"org.mozilla.javascript.gen.c10@6fe4bded"},{"url":"http://sidsawesomwmaps.webs.com/Super%20Picture.png","caption":"","_i_":2,"_ip1_":3,"_every_":"org.mozilla.javascript.gen.c10@12714bff"},{"url":"http://sidsawesomwmaps.webs.com/Tradddedss.png","caption":"","_i_":3,"_ip1_":4,"_every_":"org.mozilla.javascript.gen.c10@4c345bce"},{"url":"http://sidsawesomwmaps.webs.com/Survival%20witnh%20a%20twist%201.8%20stuff.png","caption":"","_i_":4,"_ip1_":5,"_every_":"org.mozilla.javascript.gen.c10@1775878"},{"url":"http://sidsawesomwmaps.webs.com/Big%202.png","caption":"","_i_":5,"_ip1_":6,"_every_":"org.mozilla.javascript.gen.c10@42512f08"}],"align":"center","width":446,"height":301,"thumb_width":46,"thumb_height":46,"autoplay":false,"duration":3000,"transition":"fade","side":"bottom","background":false,"background_color":"#e1e1e1","_id":"554efaaa3f71572628003c2a","_captchaPublicKey":"6Le3aDEUAAAAAMNRsdkVVxpJA05exOZVTuLEqM5u","_renderCaptcha":true,"_site":{"id":130775419}}, container: $('#webs-bin-554efaaa3f71572628003c2a > .webs-bin-wrap > .webs-container')}).done(function(m){
+						m.oneLoaded();
+						deferredLoad.resolve();
+					});
+				});
+			});
+		</script>
+
+	<div class="webs-bin" id="webs-bin-554f0bd73f71572628003e2e">
+		<div class="webs-bin-wrap">
+			<div class="webs-container webs-module-title  w-title-default">
+<h3 class="webs-title webs-title-align-center ">
+	
+	<div class="w-text w-font-arbutus_slab"><span class="wz-bold"><span style="font-size: 20px; color: rgb(44, 161, 182);" class="wz-bold">Leave your suggestions for updating the map here</span></span><div style="font-size: 20px; color: rgb(44, 161, 182);"><span class="wz-bold" style="font-size: 20px; color: rgb(44, 161, 182);">Leave your suggestions for future maps here</span></div><div style="font-size: 20px; color: rgb(44, 161, 182);"><span style="font-size: 20px; color: rgb(44, 161, 182);" class="wz-bold">L</span><span style="font-size: 20px; color: rgb(44, 161, 182);" class="wz-bold">eave any bugs you find&nbsp;here</span><br style="font-size: 20px; color: rgb(44, 161, 182);"></div><div><span class="wz-bold"><span style="font-size: 20px; color: rgb(44, 161, 182);" class="wz-bold">Leave complaints here</span></span></div><div></div></div>
+</h3>
+
+			</div>
+		</div>
+	</div>
+
+		<script>
+			require(['jquery'], function($){
+				var deferredLoad = $.Deferred();
+				webs.renderedModulesPromises.push(deferredLoad.promise());
+				require(['internal/sitebuilder/common/ModuleClassLoader'], function(mcl){
+					mcl.create('title', {data: {"align":"center","html":"<span class=\"wz-bold\"><span style=\"font-size: 20px; color: rgb(44, 161, 182);\" class=\"wz-bold\">Leave your suggestions for updating the map here<\/span><\/span><div style=\"font-size: 20px; color: rgb(44, 161, 182);\"><span class=\"wz-bold\" style=\"font-size: 20px; color: rgb(44, 161, 182);\">Leave your suggestions for future maps here<\/span><\/div><div style=\"font-size: 20px; color: rgb(44, 161, 182);\"><span style=\"font-size: 20px; color: rgb(44, 161, 182);\" class=\"wz-bold\">L<\/span><span style=\"font-size: 20px; color: rgb(44, 161, 182);\" class=\"wz-bold\">eave any bugs you find&nbsp;here<\/span><br style=\"font-size: 20px; color: rgb(44, 161, 182);\"><\/div><div><span class=\"wz-bold\"><span style=\"font-size: 20px; color: rgb(44, 161, 182);\" class=\"wz-bold\">Leave complaints here<\/span><\/span><\/div><div><\/div>","level":null,"icon":{"enable":false,"set":null,"slug":null,"position":null,"style":null},"font":"arbutus_slab","linksData":{},"_id":"554f0bd73f71572628003e2e","_captchaPublicKey":"6Le3aDEUAAAAAMNRsdkVVxpJA05exOZVTuLEqM5u","_renderCaptcha":true,"_site":{"id":130775419}}, container: $('#webs-bin-554f0bd73f71572628003e2e > .webs-bin-wrap > .webs-container')}).done(function(m){
+						m.oneLoaded();
+						deferredLoad.resolve();
+					});
+				});
+			});
+		</script>
+
+	<div class="webs-bin" id="webs-bin-554f05b53f71572628003d4d">
+		<div class="webs-bin-wrap">
+			<div class="webs-container webs-module-contact_form  w-contact_form-gridspark_default w-contact_form-default">
+<div class="w-contact_form webs-composite-module">
+	<div class="w-contact_form-container">
+		<form action="/s/site_module/130775419/contact_form/554f05b53f71572628003d4d" method="GET" novalidate="">
+			<input type="text" name="fw_human" style="display: none;">
+			
+				<table class="clearfix w-contact_form-ul w-contact_form-label-left">
+				
+					<tr class="w-contact_form-li w-contact_form-text">
+					  <td class="w-contact_form-label">
+					    <label class="required" for="w-form-554f05b53f71572628003d4d-0">Name</label>
+					  </td>
+					  <td class="w-contact_form-input">
+						
+							<input class="w-contact_form-field" type="text" id="w-form-554f05b53f71572628003d4d-0" name="w-form-554f05b53f71572628003d4d-0">
+						
+						
+						
+						
+						
+						
+					  </td>
+					</tr>
+				
+					<tr class="w-contact_form-li w-contact_form-email">
+					  <td class="w-contact_form-label">
+					    <label class="required" for="w-form-554f05b53f71572628003d4d-1">Email Address</label>
+					  </td>
+					  <td class="w-contact_form-input">
+						
+						
+							<input class="w-contact_form-field" type="email" id="w-form-554f05b53f71572628003d4d-1" name="w-form-554f05b53f71572628003d4d-1">
+						
+						
+						
+						
+						
+					  </td>
+					</tr>
+				
+					<tr class="w-contact_form-li w-contact_form-textarea">
+					  <td class="w-contact_form-label">
+					    <label class="required" for="w-form-554f05b53f71572628003d4d-2">Message</label>
+					  </td>
+					  <td class="w-contact_form-input">
+						
+						
+						
+							<textarea class="w-contact_form-field" id="w-form-554f05b53f71572628003d4d-2" name="w-form-554f05b53f71572628003d4d-2"></textarea>
+						
+						
+						
+						
+					  </td>
+					</tr>
+				
+                <tr class="w-contact_form-li">
+                    <td>&nbsp;</td>
+                    <td class="w-contact_form-input">
+				        <div class="g-recaptcha" id="captchaContainer" data-sitekey="6Le3aDEUAAAAAMNRsdkVVxpJA05exOZVTuLEqM5u" data-theme="light"></div>
+                	</td>
+                </tr>
+				<tr class="w-contact_form-li">
+				  <td>&nbsp;</td>
+				  <td class="w-contact_form-input">
+					<input type="submit" id="contact_form-18AA3AF2-E37E-44F4-8CFD-3509296A3705-submit" class="w-contact_form-submit">
+					<div class="webs-submodule webs-submodule-button webs-module-button w-button-gridspark_default w-button-default" webs-submodule-slug="button">
+<div class="w-button-container webs-align-left">
+	<div class="w-button-align webs-align-left">
+		
+			<label for="contact_form-18AA3AF2-E37E-44F4-8CFD-3509296A3705-submit">
+		
+		<a class="w-button ">
+			<div class="w-button-inner">
+				<div class="w-button-text-wrapper">
+					<div class="w-button-text">Send Message</div>
+				</div>
+				
+			</div>
+		</a>
+		
+			</label>
+		
+	</div>
+</div></div>
+				  </td>
+				</tr>
+			</table>
+			
+		</form>
+		<div class="success-message">
+			<div class="success-icon"></div>
+			Thanks for the info! I'll be getting back to you as soon as possible! :)
+		</div>
+		<div class="error-message">
+			<div class="error-icon"></div>
+			<span class="error-string">Oops. An error occurred.<br>
+<a href="#" class="resubmit_form_link">Click here</a> to try again.</span>
+		</div>
+	</div>
+</div>
+
+			</div>
+		</div>
+	</div>
+
+		<script>
+			require(['jquery'], function($){
+				var deferredLoad = $.Deferred();
+				webs.renderedModulesPromises.push(deferredLoad.promise());
+				require(['internal/sitebuilder/common/ModuleClassLoader'], function(mcl){
+					mcl.create('contact_form', {data: {"untranslated":false,"layout":"left","email":"siddiqsmail@gmail.com","confirmation":"Thanks for the info! I'll be getting back to you as soon as possible! :)","button":{"labelFor":"contact_form-18AA3AF2-E37E-44F4-8CFD-3509296A3705-submit","html":"Send Message","link":null,"linkInfo":{"linkType":"website","linkUrl":null,"newWindow":false},"linkFrozen":true,"icon":{"enable":false,"set":null,"slug":null,"position":"left","style":null},"iconLeft":true,"iconStyle":"light","bgcolor":null,"background":"","align":"left"},"fields":[{"i":0,"type":"text","label":"Name","default":"Enter name here","required":true,"id":"A55B9DB8-7F7E-47FC-A04F-99565F2B3FEE","_i_":0,"_ip1_":1},{"i":1,"type":"email","label":"Email Address","default":"Enter Email","required":true,"id":"1C6862AA-AB3E-4A50-8B4C-99499337D002","_i_":1,"_ip1_":2},{"i":2,"type":"textarea","label":"Message","default":"Enter Message","required":true,"id":"09E73F6C-7C24-4759-818F-224085895B1C","_i_":2,"_ip1_":3}],"_uid":"18AA3AF2-E37E-44F4-8CFD-3509296A3705","_id":"554f05b53f71572628003d4d","_captchaPublicKey":"6Le3aDEUAAAAAMNRsdkVVxpJA05exOZVTuLEqM5u","_renderCaptcha":true}, container: $('#webs-bin-554f05b53f71572628003d4d > .webs-bin-wrap > .webs-container')}).done(function(m){
+						m.oneLoaded();
+						deferredLoad.resolve();
+					});
+				});
+			});
+		</script>
+
+	<div class="webs-bin" id="webs-bin-554f61b33f715726280045bc">
+		<div class="webs-bin-wrap">
+			<div class="webs-container webs-module-title  w-title-default">
+<h3 class="webs-title webs-title-align-center ">
+	
+	<div class="w-text "><span style="color: rgb(5, 61, 99);">Check out&nbsp;my YouTube channel!</span></div>
+</h3>
+
+			</div>
+		</div>
+	</div>
+
+		<script>
+			require(['jquery'], function($){
+				var deferredLoad = $.Deferred();
+				webs.renderedModulesPromises.push(deferredLoad.promise());
+				require(['internal/sitebuilder/common/ModuleClassLoader'], function(mcl){
+					mcl.create('title', {data: {"align":"center","html":"<span style=\"color: rgb(5, 61, 99);\">Check out&nbsp;my YouTube channel!<\/span>","level":null,"icon":{"enable":false,"set":null,"slug":null,"position":null,"style":null},"linksData":{},"_id":"554f61b33f715726280045bc","_captchaPublicKey":"6Le3aDEUAAAAAMNRsdkVVxpJA05exOZVTuLEqM5u","_renderCaptcha":true,"_site":{"id":130775419}}, container: $('#webs-bin-554f61b33f715726280045bc > .webs-bin-wrap > .webs-container')}).done(function(m){
+						m.oneLoaded();
+						deferredLoad.resolve();
+					});
+				});
+			});
+		</script>
+
+	<div class="webs-bin" id="webs-bin-554f61e53f715726280045c4">
+		<div class="webs-bin-wrap">
+			<div class="webs-container webs-module-button  w-button-gridspark_default w-button-default">
+
+<div class="w-button-container webs-align-center">
+	<div class="w-button-align webs-align-center">
+		
+		<a class="w-button " href="user/sid9570/videos.html">
+			<div class="w-button-inner">
+				<div class="w-button-text-wrapper">
+					<div class="w-button-text"><span style="color: rgb(5, 61, 99);">Click to view!</span></div>
+				</div>
+				
+			</div>
+		</a>
+		
+	</div>
+</div>
+			</div>
+		</div>
+	</div>
+
+		<script>
+			require(['jquery'], function($){
+				var deferredLoad = $.Deferred();
+				webs.renderedModulesPromises.push(deferredLoad.promise());
+				require(['internal/sitebuilder/common/ModuleClassLoader'], function(mcl){
+					mcl.create('button', {data: {"html":"<span style=\"color: rgb(5, 61, 99);\">Click to view!<\/span>","link":null,"bgcolor":null,"align":"center","linkInfo":{"linkType":"website","linkUrl":null,"newWindow":false,"tab":"webpage","url":"https://www.youtube.com/user/sid9570/videos"},"icon":{"enable":false,"set":null,"slug":null,"position":"left","style":null},"_id":"554f61e53f715726280045c4","_captchaPublicKey":"6Le3aDEUAAAAAMNRsdkVVxpJA05exOZVTuLEqM5u","_renderCaptcha":true,"_site":{"id":130775419}}, container: $('#webs-bin-554f61e53f715726280045c4 > .webs-bin-wrap > .webs-container')}).done(function(m){
+						m.oneLoaded();
+						deferredLoad.resolve();
+					});
+				});
+			});
+		</script>
+
+	<div class="webs-bin" id="webs-bin-5569d8c5922267931204fff2">
+		<div class="webs-bin-wrap">
+			<div class="webs-container webs-module-text ">
+<div class="webs-text "><p><span style="font-size: 8px;"><span style="color: rgb(255, 255, 255);">google-site-verification=e_W9caMqaLgvFWTKy2GiuC02xfu10Bx-xMFiw8</span><span style="color: rgb(255, 255, 255);"><span style="color: rgb(255, 255, 255);">7rgvQ</span></span></span><br></p></div>
+
+			</div>
+		</div>
+	</div>
+</div></div></section>
+	<section class="webs-content webs-sidebar" data-role="webs-sidebar" id="554ed41a0cf25ff245b1b356"><!-- Begin Tree --><div class="webs-parent webs-parent-0"><div class="webs-parent webs-parent-1 webs-col">
+	<div class="webs-bin" id="webs-bin-554ed5f83f715726280038d2">
+		<div class="webs-bin-wrap">
+			<div class="webs-container webs-module-photo_gallery  w-photo_gallery-base">
+
+<div class="w-photo_gallery grid padding-medium">
+	<div class="row">
+		
+			<div class="cell" data-_i_="0">
+				<div class="cell-wrapper">
+
+					
+						<div class="image-edit-wrapper hover-effect-zoomSign hover-effect-color-black">
+							<img src="width/144/crop/15,0,90x90/sidsawesomwmaps.webs.com/Big 2.png" class="w-photo-gallery-img">
+
+							<div class="details deck-inspectah-link crop-style-square" style="width: 90px; height: 90px; " data-_i_="0">
+
+								
+
+								
+							</div>
+						</div>
+					
+
+					
+				</div>
+			</div>
+			
+		
+			<div class="cell" data-_i_="1">
+				<div class="cell-wrapper">
+
+					
+						<div class="image-edit-wrapper hover-effect-zoomSign hover-effect-color-black">
+							<img src="width/144/crop/16,0,90x90/sidsawesomwmaps.webs.com/SWT start.png" class="w-photo-gallery-img">
+
+							<div class="details deck-inspectah-link crop-style-square" style="width: 90px; height: 90px; " data-_i_="1">
+
+								
+
+								
+							</div>
+						</div>
+					
+
+					
+				</div>
+			</div>
+			
+		
+			<div class="cell" data-_i_="2">
+				<div class="cell-wrapper">
+
+					
+						<div class="image-edit-wrapper hover-effect-zoomSign hover-effect-color-black">
+							<img src="width/144/crop/16,0,90x90/sidsawesomwmaps.webs.com/Tradddedss.png" class="w-photo-gallery-img">
+
+							<div class="details deck-inspectah-link crop-style-square" style="width: 90px; height: 90px; " data-_i_="2">
+
+								
+
+								
+							</div>
+						</div>
+					
+
+					
+				</div>
+			</div>
+			</div><div class='row'>
+		
+			<div class="cell" data-_i_="3">
+				<div class="cell-wrapper">
+
+					
+						<div class="image-edit-wrapper hover-effect-zoomSign hover-effect-color-black">
+							<img src="width/144/crop/15,0,90x90/sidsawesomwmaps.webs.com/Triiiiiips-.png" class="w-photo-gallery-img">
+
+							<div class="details deck-inspectah-link crop-style-square" style="width: 90px; height: 90px; " data-_i_="3">
+
+								
+
+								
+							</div>
+						</div>
+					
+
+					
+				</div>
+			</div>
+			
+		
+			<div class="cell" data-_i_="4">
+				<div class="cell-wrapper">
+
+					
+						<div class="image-edit-wrapper hover-effect-zoomSign hover-effect-color-black">
+							<img src="width/144/crop/15,0,90x90/sidsawesomwmaps.webs.com/Survival witnh a twist 1.8 stuff.png" class="w-photo-gallery-img">
+
+							<div class="details deck-inspectah-link crop-style-square" style="width: 90px; height: 90px; " data-_i_="4">
+
+								
+
+								
+							</div>
+						</div>
+					
+
+					
+				</div>
+			</div>
+			
+		
+			<div class="cell" data-_i_="5">
+				<div class="cell-wrapper">
+
+					
+						<div class="image-edit-wrapper hover-effect-zoomSign hover-effect-color-black">
+							<img src="width/144/crop/16,0,90x90/sidsawesomwmaps.webs.com/Super Picture.png" class="w-photo-gallery-img">
+
+							<div class="details deck-inspectah-link crop-style-square" style="width: 90px; height: 90px; " data-_i_="5">
+
+								
+
+								
+							</div>
+						</div>
+					
+
+					
+				</div>
+			</div>
+			</div><div class='row'>
+		
+	</div>
+</div>
+
+
+			</div>
+		</div>
+	</div>
+
+		<script>
+			require(['jquery'], function($){
+				var deferredLoad = $.Deferred();
+				webs.renderedModulesPromises.push(deferredLoad.promise());
+				require(['internal/sitebuilder/common/ModuleClassLoader'], function(mcl){
+					mcl.create('photo_gallery', {data: {"viewType":"grid","showCropExplanation":true,"images":[{"url":"http://sidsawesomwmaps.webs.com/Big 2.png","title":"It's a huge arena!","caption":"NO world-edit used","top":0,"left":-15,"imageWidth":158.03703703703704,"_i_":0,"imageType":"webs","webs":{"path":"Big 2.png"},"selected":true,"_ip1_":1,"module":"photo_gallery","width":90,"height":90,"imageHeight":90,"align":"left","_every_":"org.mozilla.javascript.gen.c10@fd05f8"},{"url":"http://sidsawesomwmaps.webs.com/SWT start.png","title":"How you start you!","caption":"You have some basic tools","top":0,"left":-16,"imageWidth":158.03703703703704,"_i_":1,"imageType":"webs","webs":{"path":"SWT start.png"},"selected":false,"_ip1_":2,"module":"photo_gallery","width":90,"height":90,"imageHeight":90,"align":"left","_every_":"org.mozilla.javascript.gen.c10@6392dd49"},{"url":"http://sidsawesomwmaps.webs.com/Tradddedss.png","title":"Insane trades!","caption":"It's hard to get a sword like that","top":0,"left":-16,"imageWidth":158.03703703703704,"_i_":2,"imageType":"webs","webs":{"path":"Tradddedss.png"},"selected":false,"_ip1_":3,"module":"photo_gallery","width":90,"height":90,"imageHeight":90,"align":"left","_every_":"org.mozilla.javascript.gen.c10@3efe16b1"},{"url":"http://sidsawesomwmaps.webs.com/Triiiiiips-.png","title":"Self regenerating stone!","caption":"Trade the stone with villagers and get useful stuff","top":0,"left":-15,"imageWidth":158.03703703703704,"_i_":3,"imageType":"webs","webs":{"path":"Triiiiiips-.png"},"selected":false,"_ip1_":4,"module":"photo_gallery","width":90,"height":90,"imageHeight":90,"align":"left","_every_":"org.mozilla.javascript.gen.c10@1b83dec6"},{"url":"http://sidsawesomwmaps.webs.com/Survival witnh a twist 1.8 stuff.png","title":"1.8.4 stuff","caption":"you have to play in 1.8.4 Optifine so you get cool stuff","top":0,"left":-15,"imageWidth":158.03703703703704,"_i_":4,"imageType":"webs","webs":{"path":"Survival witnh a twist 1.8 stuff.png"},"selected":false,"_ip1_":5,"module":"photo_gallery","width":90,"height":90,"imageHeight":90,"align":"left","_every_":"org.mozilla.javascript.gen.c10@6e96a746"},{"url":"http://sidsawesomwmaps.webs.com/Super Picture.png","title":"You are trapped","caption":"but the arena is huge so no problem threre ","top":0,"left":-16,"imageWidth":158.03703703703704,"_i_":5,"imageType":"webs","webs":{"path":"Super Picture.png"},"selected":false,"_ip1_":6,"module":"photo_gallery","width":90,"height":90,"imageHeight":90,"align":"left","_every_":"org.mozilla.javascript.gen.c10@64c01d62"}],"settings":{"grid":{"cropStyle":"crop-style-square","showTitle":"never","showCaption":"never","photosPerRow":3,"gridPadding":"padding-medium","deckInspectah":true,"hoverEffect":"hover-effect-zoomSign","hoverEffectColor":"hover-effect-color-black"},"slideshow":{"cropStyle":"crop-style-widescreen","showTitle":"never","showCaption":"never","duration":3000,"buttonStyle":"style1","transition":"scale","thumbnailPosition":"thumbnail-horizontal thumbnail-bottom","backgroundColor":"#222222"}},"currentSlide":0,"_id":"554ed5f83f715726280038d2","_captchaPublicKey":"6Le3aDEUAAAAAMNRsdkVVxpJA05exOZVTuLEqM5u","_renderCaptcha":true,"_site":{"id":130775419}}, container: $('#webs-bin-554ed5f83f715726280038d2 > .webs-bin-wrap > .webs-container')}).done(function(m){
+						m.oneLoaded();
+						deferredLoad.resolve();
+					});
+				});
+			});
+		</script>
+
+	<div class="webs-bin" id="webs-bin-554ed7f93f71572628003913">
+		<div class="webs-bin-wrap">
+			<div class="webs-container webs-module-text ">
+<div class="webs-text "><span style="color: rgb(5, 61, 99);"><div style="text-align: center; font-size: 24px; color: rgb(5, 61, 99);"><span class="wz-bold" style="color: rgb(5, 61, 99);">Hello!</span></div><br style="color: rgb(5, 61, 99);"><br style="color: rgb(5, 61, 99);"><div style="text-align: center; color: rgb(5, 61, 99);">This is my third map, <span class="wz-bold" style="color: rgb(5, 61, 99);"><a href="docs/securesc/4vslgjkjksn81jajroa6t5hje0s2lcdf/o765sl5b3rgs8395l180pdl130kmfhti/1623865800000/12700679002742675199/11145438573692141957Z/0B3uWRHSxc5WGUVJFVUFLNjY5dWM" id="C4BA07C9-1BD4-4B3E-BE43-D103FFCDCBA1" style="color: rgb(5, 61, 99);"><span class="wz-underline wz-bold" style="color: rgb(5, 61, 99);">Survival with a twist!</span></a></span><br style="color: rgb(5, 61, 99);">This is a survival map that uses trading!<br style="color: rgb(5, 61, 99);"></div><br style="color: rgb(5, 61, 99);"><br style="color: rgb(5, 61, 99);"><div style="text-align: center; color: rgb(5, 61, 99);">In this map you mine an infinitely regenerating stone that you&nbsp;trade with <a href="wiki/Villager.html" style="color: rgb(5, 61, 99);"><span style="color: rgb(5, 61, 99);" class="wz-bold"><span style="color: rgb(5, 61, 99);" class="wz-bold"><span style="color: rgb(5, 61, 99);" class="wz-bold wz-underline"><span style="color: rgb(9, 9, 162);" class="wz-bold">V</span></span></span></span></a><a href="wiki/Villager.html" id="B54F23C7-5FB9-4A8E-9777-C672EC76D37F" style="color: rgb(5, 61, 99);"><span class="wz-bold" style="color: rgb(5, 61, 99);"><span style="color: rgb(5, 61, 99);" class="wz-bold"><span style="color: rgb(5, 61, 99);" class="wz-bold wz-underline"><span style="color: rgb(9, 9, 162);" class="wz-bold">illagers</span></span></span></span></a><span style="color: rgb(5, 61, 99);">&nbsp;</span><span style="color: rgb(5, 61, 99); background-color: transparent;">for <a href="wiki/Gold.html" id="6E0049CE-D561-4CBF-A4FF-66927D378755" style="color: rgb(7, 21, 96);"><span class="wz-bold">gold</span></a> and other&nbsp;supplies to survive!</span></div><br style="color: rgb(5, 61, 99);"><br style="color: rgb(5, 61, 99);"><div style="text-align: center; color: rgb(5, 61, 99);">In this map you can do get and do most</div><div style="text-align: center; color: rgb(5, 61, 99);">of the things you would normally do! Like...</div><div style="text-align: center; color: rgb(5, 61, 99);"> going to&nbsp;the <span class="wz-bold" style="color: rgb(5, 61, 99);"><span style="color: rgb(5, 61, 99);" class="wz-underline wz-bold"><span style="color: rgb(9, 9, 162);" class="wz-bold">N</span></span></span><a href="wiki/The_Nether.html" id="128171D0-34DD-4440-ACF9-84F7CC60495D" style="color: rgb(9, 9, 162);"><span class="wz-bold wz-underline" style="color: rgb(9, 9, 162);"><span style="color: rgb(9, 9, 162);" class="wz-bold">ether</span></span></a><span class="wz-bold wz-underline" style="color: rgb(5, 61, 99);"><span style="color: rgb(5, 61, 99);" class="wz-bold"><span style="color: rgb(5, 61, 99);" class="wz-bold"><span style="color: rgb(9, 9, 162);" class="wz-bold">,</span></span></span></span></div><div style="text-align: center; color: rgb(5, 61, 99);">building cool stuff,&nbsp;</div><div style="text-align: center; color: rgb(5, 61, 99);">fighting off <a href="wiki/Mob.html" id="526297D9-2D44-4443-ABC7-AF8817B1DC72" style="color: rgb(5, 61, 99);"><span class="wz-bold wz-underline" style="color: rgb(5, 61, 99);"><span style="color: rgb(9, 9, 162);" class="wz-bold">mobs</span></span></a><span style="color: rgb(9, 9, 162);">,</span></div><div style="text-align: center; color: rgb(5, 61, 99);"><span>&nbsp;</span><a href="wiki/Breaking.html" id="988303C0-2692-4DAF-84F1-C359D1302CAE" style="color: rgb(5, 61, 99);"><span class="wz-bold" style="color: rgb(5, 61, 99);"><span style="color: rgb(9, 9, 162);" class="wz-bold">mining</span></span></a><span style="color: rgb(9, 9, 162);"> </span>(of course),</div><div style="text-align: center; color: rgb(5, 61, 99);">&nbsp;playing with&nbsp;<span style="color: rgb(5, 61, 99); background-color: transparent;">friends (if you have any),</span></div><div style="text-align: center; color: rgb(5, 61, 99);"><span style="color: rgb(5, 61, 99); background-color: transparent;">&nbsp;and just plain having fun!</span></div><br style="color: rgb(5, 61, 99);"><div style="text-align: center; color: rgb(5, 61, 99);">In this map there is no way to get to the <a href="wiki/The_End.html" id="C296246A-C3F7-4318-8E64-F85412167060" style="color: rgb(5, 61, 99);"><span class="wz-bold" style="color: rgb(5, 61, 99);">End</span></a> :( but.....<br style="color: rgb(5, 61, 99);">I will be taking suggestions for this map!<br style="color: rgb(5, 61, 99);"></div><br style="color: rgb(5, 61, 99);"><div style="text-align: center; color: rgb(5, 61, 99);">If you have a thing you want me to add</div><div style="text-align: center; color: rgb(5, 61, 99);">then leave it in the comment section below!<br style="color: rgb(5, 61, 99);"></div><br style="color: rgb(5, 61, 99);"><div style="text-align: center; color: rgb(5, 61, 99);">I will try to add as many things as I can so hopefully</div><div style="text-align: center; color: rgb(5, 61, 99);">I can add your suggestion to the map!</div><br style="color: rgb(5, 61, 99);"><div style="text-align: center; color: rgb(5, 61, 99);">Maybe you guys want to be able to go to the end maybe<br style="color: rgb(5, 61, 99);">you guys want a new custom <a href="wiki/Villager.html" id="57A6DAD5-424D-47BA-9D1A-EBEBF8427E57" style="color: rgb(5, 61, 99);"><span class="wz-bold" style="color: rgb(5, 61, 99);">Villager</span></a> maybe you guys want</div><div style="text-align: center; color: rgb(5, 61, 99);">a way to break out... whatever you want I'll try to add it!</div><br style="color: rgb(5, 61, 99);"><div style="text-align: center; color: rgb(5, 61, 99);">I can't&nbsp;guarantee that I'll add&nbsp;everything<br style="color: rgb(5, 61, 99);">you guys want so please don't get to upset if I don't</div><div style="text-align: center; color: rgb(5, 61, 99);">add your suggestion OK.</div><br style="color: rgb(5, 61, 99);"><div style="text-align: center; color: rgb(5, 61, 99);">I would love it if you guys checked you my other maps! :)<br style="color: rgb(5, 61, 99);"><br style="color: rgb(5, 61, 99);"></div><div style="text-align: center; color: rgb(9, 9, 162);"><span class="wz-bold" style="color: rgb(9, 9, 162);"><a href="docs/securesc/4vslgjkjksn81jajroa6t5hje0s2lcdf/p5f4rgn3l4f0j96k4jog6t0mivsuc8o4/1623865875000/12700679002742675199/11145438573692141957Z/0B3uWRHSxc5WGd1A0eG43emJpRGc" id="6DCB27DA-50F5-4706-A3D9-2157E31EDC91" style="color: rgb(9, 9, 162);"><span style="color: rgb(9, 9, 162);" class="wz-bold">#1 Trapped survival 2!</span></a></span><br style="color: rgb(9, 9, 162);"><br style="color: rgb(9, 9, 162);"></div><div style="text-align: center; color: rgb(5, 61, 99);"><span style="color: rgb(5, 61, 99);" class="wz-bold wz-underline"><a href="docs/securesc/4vslgjkjksn81jajroa6t5hje0s2lcdf/4to2jc9rat4td11bf0elfmjm68iqj7fo/1623865875000/12700679002742675199/11145438573692141957Z/0B3uWRHSxc5WGSkszekp0ZUJpZ3M" id="8EF8C693-AF62-4E4E-A285-7C5CEBE928EA" style="color: rgb(5, 61, 99);"></a></span><span style="color: rgb(5, 61, 99);" class="wz-bold"><a href="docs/securesc/4vslgjkjksn81jajroa6t5hje0s2lcdf/4to2jc9rat4td11bf0elfmjm68iqj7fo/1623865875000/12700679002742675199/11145438573692141957Z/0B3uWRHSxc5WGSkszekp0ZUJpZ3M" style="color: rgb(5, 61, 99);"><span style="color: rgb(9, 9, 162);" class="wz-underline wz-bold">#2 Complete&nbsp;world!</span></a></span><span style="color: rgb(5, 61, 99);" class="wz-bold wz-underline"><a href="docs/securesc/4vslgjkjksn81jajroa6t5hje0s2lcdf/4to2jc9rat4td11bf0elfmjm68iqj7fo/1623865875000/12700679002742675199/11145438573692141957Z/0B3uWRHSxc5WGSkszekp0ZUJpZ3M" style="color: rgb(5, 61, 99);"></a></span></div><div style="text-align: center; color: rgb(5, 61, 99);"><span class="wz-underline" style="color: rgb(5, 61, 99);">_________________________________________</span></div><br style="color: rgb(5, 61, 99);"><br style="color: rgb(5, 61, 99);"><br style="color: rgb(5, 61, 99);"><div style="text-align: center; color: rgb(5, 61, 99);"><span class="wz-underline wz-bold" style="color: rgb(5, 61, 99);">You must play in the newest</span></div><div style="text-align: center; color: rgb(5, 61, 99);"><span class="wz-underline" style="color: rgb(5, 61, 99);"><span class="wz-bold" style="color: rgb(5, 61, 99);">version of</span> </span><a href="docs/securesc/4vslgjkjksn81jajroa6t5hje0s2lcdf/p1blt72tqggj4q46808ba400rb7g0lff/1623865875000/12700679002742675199/11145438573692141957Z/0B3uWRHSxc5WGYzJJR185RmJsdms.jar" id="974E5CCF-26A4-4708-A213-E390489504C2" style="color: rgb(5, 61, 99);"><span class="wz-bold wz-underline" style="color: rgb(5, 61, 99);">1.8.4 Optifine!</span></a><br style="color: rgb(5, 61, 99);"></div><div style="text-align: center; color: rgb(5, 61, 99);"><br style="color: rgb(5, 61, 99);"></div><div style="text-align: center; color: rgb(5, 61, 99);"><a href="l17b.html" id="F8448A85-34EF-4EED-B21F-99C36D8AFA51" style="color: rgb(5, 61, 99);"><span class="wz-bold" style="color: rgb(5, 61, 99);">(Install instructions For Optifine)</span></a></div><div style="color: rgb(5, 61, 99);"><br style="color: rgb(5, 61, 99);"></div><br style="color: rgb(5, 61, 99);"><div style="text-align: center; color: rgb(5, 61, 99);">These are the recommended resource packs.</div><div style="text-align: center; color: rgb(5, 61, 99);"><a href="file/mgwgmwamp74muo4/FaithfulVenom-32x-1.8-r3.zip/file.html" id="AC014F8E-7280-4F9F-BDC2-2B524CBB60EE" style="color: rgb(5, 61, 99);"><br style="color: rgb(5, 61, 99);"></a><span style="color: rgb(5, 61, 99);" class="wz-underline wz-bold"><a href="uc.html" id="101C0ED6-04BE-483C-ACE1-48798F9A0D74" style="color: rgb(5, 61, 99);">Faithful-Venom</a></span>&nbsp;as the base texture pack,</div><br style="color: rgb(5, 61, 99);"><div style="text-align: center; color: rgb(5, 61, 99);"><a href="docs/securesc/4vslgjkjksn81jajroa6t5hje0s2lcdf/g9f13j71i71ai08ev6e87bron8lrmlj8/1623865875000/12700679002742675199/11145438573692141957Z/0B3uWRHSxc5WGV25EeldHQnlxbTg.zip" id="B483E3BE-AEEE-41B9-B353-D9B9C034BF9B" style="color: rgb(5, 61, 99);"><span class="wz-bold" style="color: rgb(5, 61, 99);">Custom Sky</span></a>&nbsp;over that,&nbsp;</div><br style="color: rgb(5, 61, 99);"><div style="text-align: center; color: rgb(5, 61, 99);">and <span style="color: rgb(5, 61, 99);"><a href="docs/securesc/4vslgjkjksn81jajroa6t5hje0s2lcdf/m605flirivjdvoq9m5jbueih5lefs1f2/1623865875000/12700679002742675199/11145438573692141957Z/0B3uWRHSxc5WGbVZia2h1Rm1BU0E.zip" id="AAE0D07C-29D8-4EEB-890E-4A1A9192A50B" style="color: rgb(5, 61, 99);"><span class="wz-bold" style="color: rgb(5, 61, 99);"><font color="#120aac" style="color: rgb(5, 61, 99);">Sibsib92's&nbsp;Default&nbsp;3D&nbsp;</font></span></a></span><font color="#120aac" style="color: rgb(5, 61, 99);"><b style="color: rgb(5, 61, 99);"><u style="color: rgb(5, 61, 99);">models</u></b></font></div><div style="text-align: center; color: rgb(5, 61, 99);"><br style="color: rgb(5, 61, 99);"></div><div style="text-align: center; color: rgb(5, 61, 99);">These resource packs are highly recommended for a</div><div style="text-align: center; color: rgb(5, 61, 99);">more &nbsp;beautiful and enjoyable playing experience!</div><br style="color: rgb(5, 61, 99);"><br style="color: rgb(5, 61, 99);"><div style="text-align: center; color: rgb(5, 61, 99);"><span style="font-size: 24px; color: rgb(9, 9, 162);" class="wz-bold"><a href="docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/s3mh98ioui6j84e6s0f84k241of2ko90/1623865800000/12700679002742675199/0B3uWRHSxc5WGMm1kVFpfMUxFTk0" id="EE7D171F-C5B1-40EA-9DD2-66298BE2C60A" style="color: rgb(9, 9, 162);">Download Here</a></span></div><div style="text-align: center; color: rgb(9, 9, 162);"><br style="color: rgb(9, 9, 162);"></div><div style="text-align: center; color: rgb(5, 61, 99); font-size: 18px;"><a href="l18p.html" id="12B2B07A-F119-46F5-8D51-5140ACEB48A6" style="color: rgb(5, 61, 99);"><span style="color: rgb(5, 61, 99);"><span style="color: rgb(9, 9, 162);">Instructions to install here</span></span></a></div><br style="color: rgb(5, 61, 99);"><div style="text-align: center; font-size: 18px; color: rgb(5, 61, 99);"><span class="wz-bold" style="color: rgb(5, 61, 99); font-size: 18px;">Thanks for playing my map! :) have a great and wonderful day!</span></div></span></div>
+
+			</div>
+		</div>
+	</div>
+</div></div></section>
+</div>
+
+</div>
+<div id="footer" class="clearfix">
+	<div class="webs-content" data-role="webs-footer" id="554ecc720cf25ff245b1b302"><!-- Begin Tree --><div class="webs-parent webs-parent-0"><div class="webs-parent webs-parent-1 webs-col">
+	<div class="webs-bin" id="webs-bin-554ecc720cf25ff245b1b303">
+		<div class="webs-bin-wrap">
+			<div class="webs-container webs-module-freebar ">
+Create your own free website today
+			</div>
+		</div>
+	</div>
+</div></div></div>
+</div>
+<div class="subfooter">
+	<nav class="nav-footer">
+		<span id='translatedMore' style='display:none; top: -9999px !important; left: -9999px !important;'>More</span>
+<ul id="webs-nav" class="webs-nav">
+	<li class="webs-home active fw-class-50d458c94c4fd5fe1ff32277e6a6de8a"><a href="index.htm" title="Survival With A Twist"><span class="title">Survival With A Twist</span><span class="after"></span></a></li>
+	<li class="fw-class-d961cbd5cd08fb7d0ee5894a6d5fd0c8"><a href="complete-world.html" title="Complete World"><span class="title">Complete World</span><span class="after"></span></a></li>
+	<li class="fw-class-d0dc72eb4f0b148c5067cdf3d4dc79fc"><a href="trapped-survival.html" title="Trapped Survival"><span class="title">Trapped Survival</span><span class="after"></span></a></li>
+</ul>
+
+	</nav>
+</div>
+
+	</div>
+
+
+<footer class="freebar-fixed">
+	<div class="freebar-content">
+		<div class="freebar-logo" title="Webs">Webs</div>
+		<span class="freebar-tagline">Better Websites Made Simple</span>
+		<!--a id="freebar-signup" href="http://www.webs.com/Signup?referer=wftr-fr-3-en&utm_source=product&utm_medium=footer&utm_term=free&utm_content=en-3&utm_campaign=users" title="Create your own free website today" rel="nofollow">Create your own free website today</a-->
+	</div>
+</footer>
+
+<script type="text/javascript">require(["usersites/js/fixedFreebar"]);</script>
+<script data-keep-for-mobile='1'>webs = window.webs || {}; webs.stats = {"siteId":"130775419","pageId":"341868295","pageTitle":"Survival With A Twist","parentPageId":"","collectorUrl":"https://statscollector.digital.vistaprint.com/record","premium":false,"builderType":"SB_3"};</script><script data-keep-for-mobile='2' async="" src='active-static/target/stats/collector.js'></script><script type="text/javascript">(function() {var ga = document.createElement("script"); ga.type = "text/javascript"; ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ga, s);})();</script>
+<script type="text/javascript">(function(){window['__CF$cv$params']={r:'6605e24e0c732cb9',m:'fc96e66d8ed75a053dcbfbadd556e2f4265d63be-1623865863-1800-AVUpv4djMTEpiKKr3MDWQxQP/XKhHzp2XSn5lkm87aGN5QpMZVLG8smCLRX3jaj8SRYnZPFXfSTJZiWs+B0UwUmOLr5RDSSak4zuVs7Gr1MlddHRpCNTzs5Xhfi95iXTfg==',s:[0x45599c52a5,0x06d303b260],}})();</script></body>
+</html>
